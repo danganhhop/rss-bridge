@@ -125,6 +125,8 @@ class InstagramBridge extends BridgeAbstract {
 
 			if($directLink) {
 				$mediaURI = $media->display_url;
+			} else if(true) {
+				$mediaURI = $media->display_url;
 			} else {
 				$mediaURI = self::URI . 'p/' . $media->shortcode . '/media?size=l';
 			}
